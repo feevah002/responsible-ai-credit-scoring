@@ -1,0 +1,4 @@
+Model,Largest Approval Rate Difference,Largest Approval Difference Variable,Largest False Negative Rate Difference,Fairness Interpretation
+Logistic Regression Baseline,0.166667,NAME_INCOME_TYPE,0.333333,Group-level differences were present. Low recall also limits responsible decision-making.
+Random Forest Baseline,0.041667,OCCUPATION_TYPE,0.125,"Approval rate differences were smaller than Logistic Regression, but false negative differences remained."
+Class-Weighted Logistic Regression,1.0,NAME_INCOME_TYPE,1.0,"Recall improved strongly, but some group-level fairness differences increased. This shows a fairness-performance trade-off."

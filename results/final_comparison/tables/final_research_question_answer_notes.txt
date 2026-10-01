@@ -1,0 +1,16 @@
+
+FINAL RESPONSIBLE AI COMPARISON NOTES
+
+Research question:
+To what extent can a fairness-aware and affordability-aware machine learning framework improve responsible credit scoring decisions compared with traditional accuracy-focused credit scoring models?
+
+Summary answer:
+The responsible AI framework improves the evaluation of credit scoring decisions by showing limitations that accuracy alone does not reveal. The Logistic Regression baseline achieved high accuracy, but its recall was extremely low, meaning it missed most applicants with repayment difficulty. Random Forest improved recall slightly but still remained limited.
+
+The class-weighted Logistic Regression model substantially improved recall, meaning it identified many more applicants with repayment difficulty. However, this came with lower accuracy and precision, and it increased some group-level fairness differences. Therefore, the fairness-aware improvement did not simply solve the problem. Instead, it exposed an important trade-off between detecting repayment difficulty and maintaining stable group-level fairness outcomes.
+
+The affordability-risk analysis added another layer of evaluation. Baseline models approved almost all high-burden applicants, while the class-weighted model was more cautious and approved fewer high-burden applicants. The actual difficulty rate among high-burden predicted approvals was also lower for the class-weighted model. However, repayment burden is only a proxy and does not represent a full affordability assessment.
+
+The explainability and SHAP analysis showed that model predictions were influenced by external source scores, credit amount variables, borrower profile variables, and repayment burden. The appearance of REPAYMENT_BURDEN among important features supports the affordability-aware part of the framework.
+
+Overall, the project shows that a responsible AI framework does not necessarily produce a single perfect model. Its main value is that it provides a wider evaluation of credit scoring by comparing predictive performance, fairness, affordability risk and explainability together.

@@ -1,0 +1,26 @@
+
+EXPLAINABILITY ANALYSIS NOTES
+
+This stage provides global explainability for the credit scoring models.
+
+Random Forest explainability:
+- Random Forest feature importance was used to identify which variables contributed most to the model's decision-making.
+- Feature importance shows which variables were most useful for splitting the data across the trees.
+- It does not prove causation, but it helps explain which features were most influential in the model.
+
+Logistic Regression explainability:
+- Logistic Regression coefficients were used to identify which variables had stronger influence on predicted repayment difficulty.
+- Because the numeric features were scaled, coefficient magnitudes can be compared more fairly.
+- A positive coefficient means the feature increases the predicted probability of repayment difficulty.
+- A negative coefficient means the feature reduces the predicted probability of repayment difficulty.
+- Coefficients should still be interpreted carefully because encoded features and correlated variables can affect interpretation.
+
+Class-weighted Logistic Regression explainability:
+- Class-weighted Logistic Regression coefficients were also extracted.
+- This helps compare how the fairness-aware/class-weighted model uses features differently from the baseline Logistic Regression model.
+- This is useful because the class-weighted model improved recall but changed the trade-off between accuracy, precision, fairness and affordability.
+
+Important limitation:
+- This explainability analysis is global, meaning it explains overall model behaviour.
+- It does not yet explain individual applicant decisions.
+- SHAP can be added later if more detailed local explanation is needed.

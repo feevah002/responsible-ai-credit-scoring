@@ -1,0 +1,18 @@
+
+FINAL SAVED MODEL NOTES
+
+Selected final demo model:
+Class-weighted Logistic Regression
+
+Reason for selection:
+This model best represents the responsible AI framework because it improves recall for repayment difficulty detection compared with the baseline models. It is not presented as a perfect model. It is used as a prototype model to demonstrate the trade-off between predictive performance, fairness, affordability-risk behaviour and explainability.
+
+Important interpretation:
+- TARGET = 0 means no repayment difficulty.
+- TARGET = 1 means repayment difficulty.
+- A higher predicted probability means higher predicted repayment difficulty risk.
+- The model should not be used for real lending decisions.
+- The app/demo is for academic prototype demonstration only.
+
+Model input:
+The app must provide the same feature columns used during model training. Missing fields in the app will be filled with 0 or default values before prediction.

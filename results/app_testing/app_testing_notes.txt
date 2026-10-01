@@ -1,0 +1,17 @@
+
+APP TESTING NOTES
+
+These test cases were selected from the real test split of the prepared Home Credit dataset.
+
+Purpose:
+- To test the app using real dataset examples rather than only imaginary manual inputs.
+- To compare the app prediction with the actual TARGET value.
+- To demonstrate correct predictions, errors, and affordability-risk cases.
+
+Important:
+- Actual TARGET = 0 means no repayment difficulty.
+- Actual TARGET = 1 means repayment difficulty.
+- Model prediction = 0 means predicted no repayment difficulty.
+- Model prediction = 1 means predicted repayment difficulty.
+- Risk probability is the predicted probability of repayment difficulty.
+- The app remains a simplified prototype interface, while the full model evaluation uses all 62 trained features.

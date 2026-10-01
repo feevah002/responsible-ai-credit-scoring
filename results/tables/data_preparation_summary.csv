@@ -1,0 +1,7 @@
+Item,Value
+Original rows,307511
+Rows after cleaning,307507
+Original selected columns,22
+Prepared columns after encoding,64
+Prepared dataset file,data/processed/prepared_credit_data.csv
+Fairness reference file,data/processed/fairness_reference.csv

@@ -1,0 +1,9 @@
+Model performance comparison summary
+------------------------------------
+Accuracy: Logistic Regression = 0.919450, Random Forest = 0.915743. Better: Logistic Regression.
+Precision: Logistic Regression = 0.569620, Random Forest = 0.367844. Better: Logistic Regression.
+Recall: Logistic Regression = 0.009063, Random Forest = 0.060826. Better: Random Forest.
+F1-score: Logistic Regression = 0.017843, Random Forest = 0.104390. Better: Random Forest.
+ROC-AUC: Logistic Regression = 0.739034, Random Forest = 0.725785. Better: Logistic Regression.
+
+Overall, Logistic Regression achieved slightly higher accuracy, precision, and ROC-AUC. Random Forest achieved higher recall and F1-score, meaning it identified more applicants with repayment difficulty, although the minority class remained difficult to predict.

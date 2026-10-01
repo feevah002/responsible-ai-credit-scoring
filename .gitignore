@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Dataset files
+data/raw/*
+data/processed/*
+
+# Large generated baseline models
+results/model_outputs/*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets
+.env

@@ -1,0 +1,25 @@
+
+SHAP EXPLAINABILITY ANALYSIS NOTES
+
+This stage adds SHAP explainability to the responsible AI credit scoring framework.
+
+Purpose:
+- To identify which features contributed most strongly to model predictions.
+- To support explainability beyond accuracy, fairness and affordability-risk analysis.
+- To compare whether the baseline and class-weighted models rely on similar or different features.
+
+Interpretation:
+- Mean absolute SHAP values show the average strength of a feature's contribution to predictions.
+- Larger mean absolute SHAP values indicate stronger overall influence.
+- For this project, class 1 is the important class because TARGET = 1 means repayment difficulty.
+- SHAP values should be interpreted as model explanation, not causal evidence.
+
+Models explained:
+- Logistic Regression Baseline using LinearExplainer.
+- Random Forest Baseline using TreeExplainer.
+- Class-Weighted Logistic Regression using LinearExplainer.
+
+Limitations:
+- SHAP was calculated on a representative test sample to reduce computation time.
+- The analysis provides explanation of model behaviour, not proof that variables cause repayment difficulty.
+- For linear models, SHAP values are based on transformed/scaled features.

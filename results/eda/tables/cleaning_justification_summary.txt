@@ -1,0 +1,20 @@
+
+DATA CLEANING AND FEATURE SELECTION JUSTIFICATION
+
+The raw Home Credit dataset was structured but not fully prepared for this project.
+
+Raw dataset size:
+- 307,511 records
+- 122 columns
+
+Prepared modelling dataset size:
+- 307,507 records
+- 64 columns
+
+The project did not use heavy row deletion. Only four rows with CODE_GENDER = XNA were removed because the group was too small and unclear for meaningful fairness analysis.
+
+The main strategy was feature selection, transformation, encoding and limited cleaning. This was chosen because deleting every row with missing values could remove useful borrower records and affect the sample.
+
+Missing-value analysis showed that many of the highest-missing columns were building or housing-related variables. These were not central to the project objectives, which focus on credit-risk prediction, fairness auditing and affordability-risk analysis.
+
+Financial variables were kept because they support prediction and affordability analysis. Borrower group variables were kept because they support fairness auditing. Date-based variables were transformed into meaningful features such as AGE_YEARS and EMPLOYMENT_YEARS. REPAYMENT_BURDEN was created using AMT_ANNUITY / AMT_INCOME_TOTAL to support the affordability-risk component.

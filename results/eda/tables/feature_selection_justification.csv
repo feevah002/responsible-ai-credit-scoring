@@ -1,0 +1,17 @@
+Feature,Feature_Type,Reason_For_Use,Project_Objective_Supported
+TARGET,Target variable,Used to identify repayment difficulty,Model training and evaluation
+AMT_INCOME_TOTAL,Financial variable,Represents applicant income,Credit-risk and affordability analysis
+AMT_CREDIT,Financial variable,Represents requested credit amount,Credit-risk and affordability analysis
+AMT_ANNUITY,Financial variable,Represents repayment amount,Credit-risk and affordability analysis
+AMT_GOODS_PRICE,Financial variable,Represents goods price linked to credit,Credit-risk analysis
+DAYS_BIRTH,Date-based variable,Transformed into AGE_YEARS for clearer interpretation,Prediction and fairness auditing
+DAYS_EMPLOYED,Date-based variable,Transformed into EMPLOYMENT_YEARS after handling abnormal values,Prediction and borrower profile analysis
+CODE_GENDER,Borrower group variable,Used to compare model outcomes by gender,Fairness auditing
+NAME_FAMILY_STATUS,Borrower group variable,Used to compare model outcomes by family status,Fairness auditing
+NAME_INCOME_TYPE,Borrower group variable,Used to compare model outcomes by income type,Fairness auditing
+OCCUPATION_TYPE,Borrower group variable,Used to compare model outcomes by occupation group,Fairness auditing
+AGE_YEARS,Derived variable,Created from DAYS_BIRTH for meaningful age analysis,Prediction and fairness auditing
+EMPLOYMENT_YEARS,Derived variable,Created from DAYS_EMPLOYED for employment-duration analysis,Prediction
+AGE_GROUP,Derived group variable,Created to support group-level fairness comparison,Fairness auditing
+INCOME_GROUP,Derived group variable,Created to support group-level fairness comparison,Fairness auditing
+REPAYMENT_BURDEN,Derived affordability variable,Created as AMT_ANNUITY / AMT_INCOME_TOTAL,Affordability-risk analysis

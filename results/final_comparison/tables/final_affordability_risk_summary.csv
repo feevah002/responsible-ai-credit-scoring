@@ -1,0 +1,4 @@
+Model,Test Applicants,Predicted Approvals,Predicted Approval Rate (%),High Burden Threshold,High Burden Applicants in Test,High Burden Applicants Approved,Approvals with High Burden (%),High Burden Applicants Approved (%),Average Repayment Burden Among Approvals,Median Repayment Burden Among Approvals,Actual Difficulty Rate Among High-Burden Approvals (%)
+Logistic Regression Baseline,61502,61423,99.87154889271892,0.35,3258,3252,5.294433681194341,99.8158379373849,0.1812605066189412,0.16325,7.656826568265683
+Random Forest Baseline,61502,60681,98.66508406230692,0.35,3258,3234,5.329510060809809,99.2633517495396,0.1810970887521302,0.1629428571428571,7.452071737786023
+Class-Weighted Logistic Regression,61502,40436,65.74745536730514,0.35,3258,1922,4.753190226530815,58.99324739103745,0.1774983945397554,0.1598333333333333,3.798126951092612

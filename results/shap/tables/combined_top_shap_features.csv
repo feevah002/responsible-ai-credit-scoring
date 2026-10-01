@@ -1,0 +1,31 @@
+Model,Feature,Mean_Absolute_SHAP_Value
+Logistic Regression Baseline,AMT_GOODS_PRICE,0.8363668848083315
+Logistic Regression Baseline,AMT_CREDIT,0.7227333540507301
+Logistic Regression Baseline,EXT_SOURCE_3,0.39337854106806786
+Logistic Regression Baseline,EXT_SOURCE_2,0.3554769459600502
+Logistic Regression Baseline,OCCUPATION_TYPE_Unknown,0.15264399320615615
+Logistic Regression Baseline,OCCUPATION_TYPE_Laborers,0.15136787558579337
+Logistic Regression Baseline,CODE_GENDER_M,0.14334257914430598
+Logistic Regression Baseline,EMPLOYMENT_YEARS,0.13042543027987488
+Logistic Regression Baseline,FLAG_OWN_CAR_Y,0.1230512185321434
+Logistic Regression Baseline,NAME_EDUCATION_TYPE_Secondary / secondary special,0.10472122613145213
+Random Forest Baseline,EXT_SOURCE_2,0.06731158374266281
+Random Forest Baseline,EXT_SOURCE_3,0.06330619649948406
+Random Forest Baseline,EMPLOYMENT_YEARS,0.02767279437520063
+Random Forest Baseline,AGE_YEARS,0.026802333834981176
+Random Forest Baseline,AMT_ANNUITY,0.02674520059763104
+Random Forest Baseline,REPAYMENT_BURDEN,0.02518152375186011
+Random Forest Baseline,AMT_CREDIT,0.02466750844961615
+Random Forest Baseline,AMT_GOODS_PRICE,0.022588713994592436
+Random Forest Baseline,CODE_GENDER_M,0.018865489987544278
+Random Forest Baseline,AMT_INCOME_TOTAL,0.018308675173589865
+Class-Weighted Logistic Regression,AMT_GOODS_PRICE,0.8232336966159685
+Class-Weighted Logistic Regression,AMT_CREDIT,0.7371196278319626
+Class-Weighted Logistic Regression,EXT_SOURCE_3,0.404237739382976
+Class-Weighted Logistic Regression,EXT_SOURCE_2,0.359138037696783
+Class-Weighted Logistic Regression,CODE_GENDER_M,0.15531411881615265
+Class-Weighted Logistic Regression,FLAG_OWN_CAR_Y,0.12678827816758886
+Class-Weighted Logistic Regression,NAME_EDUCATION_TYPE_Secondary / secondary special,0.12502351741413004
+Class-Weighted Logistic Regression,EMPLOYMENT_YEARS,0.12354308966586998
+Class-Weighted Logistic Regression,REPAYMENT_BURDEN,0.11588761265967323
+Class-Weighted Logistic Regression,AGE_YEARS,0.11050092499650686

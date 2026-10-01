@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-score,ROC-AUC,Main Performance Interpretation
+Logistic Regression Baseline,0.91945,0.56962,0.009063,0.017843,0.739034,High accuracy but extremely low recall. Missed most repayment difficulty cases.
+Random Forest Baseline,0.915743,0.367844,0.060826,0.10439,0.725785,Slightly lower accuracy than Logistic Regression but better recall and F1-score.
+Class-Weighted Logistic Regression,0.685262,0.158407,0.672105,0.256387,0.739103,Much stronger recall but lower accuracy and precision. Shows a major trade-off.
